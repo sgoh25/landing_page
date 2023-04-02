@@ -9,7 +9,8 @@ main {
 
 /*** wrapper div for both header and main ***/
 .wrapper {
-  margin-top: 10%; }
+  margin-top: 5%;
+  margin-bottom: 5%; }
 
 /*** anchor tags ***/
 a:link,
@@ -98,12 +99,22 @@ footer {
   height: 20px; }
 
 /*** media queries ***/
+/* X-Small devices (phones, up to 480px) */
+@media (max-width: 479px) {
+  .wrapper {
+    margin: 5% auto 5% auto; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%, auto));
+    width: var(--max-width);
+    max-width: 100%; } }
 /* X-Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
   /* wrapper stays 480px wide past 480px wide and is kept centered */
   .wrapper {
     width: 480px;
-    margin: 10% auto 0 auto; }
+    margin: 5% auto 5% auto; }
 
   .grid {
     display: grid;
@@ -114,7 +125,7 @@ footer {
 @media (min-width: 768px) {
   .wrapper {
     width: 768px;
-    margin: 10% auto 0 auto; }
+    margin: 5% auto 5% auto; }
 
   .grid {
     display: grid;
@@ -125,7 +136,7 @@ footer {
 @media (min-width: 1000px) {
   .wrapper {
     width: 1000px;
-    margin: 10% auto 0 auto; }
+    margin: 5% auto 5% auto; }
 
   .grid {
     display: grid;
