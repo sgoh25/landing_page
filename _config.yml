@@ -1,15 +1,16 @@
 # general configuration
-url: http://excentris.net
+url: https://seraphinegoh.me
 baseurl: ''
 
 # compass configuration
 compass:
   # an avatar or logo (optional)
-  logo: "/images/compass.png"
+  logo: "/images/profile.jpg"
   # author will appear under the avatar (optional)
-  author: "Compass"
+  author: "Seraphine Goh"
   # tagline will appear under the title (optional)
-  tagline: "The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"
+  tagline: "<a href='../assets/SeraphineGoh_Resume.pdf'>Resume</a> - /
+  <a href='https://www.linkedin.com/in/seraphine-goh/'>Linkedin</a>"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
@@ -17,8 +18,6 @@ compass:
   # be added at the end of the <head> section. You can add your Google Analytics
   # Tracking Code to that file.
   include_analytics: false
-  # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "compass"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
