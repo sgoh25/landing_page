@@ -1,12 +1,12 @@
 ---
 ---
 
-$text-color: #46433A;
-$anchor-text-color: #CE534D;
-$background-color: #F1EED9;
+$text-color: #0e2c38;
+$anchor-text-color: #b85169;
+$background-color: #91bcb7a1;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Verdana', sans-serif;
 	color: $text-color;
 	background-color: $background-color;
 }
@@ -42,12 +42,6 @@ a:hover {
 	margin: 0.8em 0;
 }
 
-/* override the left margin added by font awesome for the main content list,
-since it must be aligned with the content */
-.fa-ul.main-list {
-	margin-left: 0;
-}
-
 /* list icons */
 .main-list-item-icon {
 	width: 36px;
@@ -60,19 +54,19 @@ since it must be aligned with the content */
 }
 
 .logo {
-	width: 96px;
-	height: 96px;
+	width: 200px;
+	height: 200px;
 	display: inline-block;
 	background-size: cover;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
-	border: 2px solid $background-color;
-	box-shadow: 0 0 0 3px $text-color;
+	border: 0.5px solid $background-color;
+	box-shadow: 0 0 0 2px $text-color;
 }
 
 /*** author ***/
 .author-container h1 {
-	font-size: 2.8em;
+	font-size: 2.25em;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
@@ -80,7 +74,7 @@ since it must be aligned with the content */
 
 /*** tagline ***/
 .tagline-container p {
-	font-size: 1.3em;
+	font-size: 1em;
 	text-align: center;
 	margin-bottom: 2em;
 }
@@ -103,13 +97,6 @@ footer {
 	height: 20px;
 }
 
-.poweredby {
-	font-family: "Arial Narrow", Arial;
-	font-size: 0.6em;
-	line-height: 0.6em;
-	padding: 0 5px;
-}
-
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
@@ -122,10 +109,8 @@ footer {
 
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
 	.wrapper {
-		width: 680px;
+		width: 768px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
@@ -143,7 +128,7 @@ footer {
 	}
 
 	main {
-		width: 46%;
+		width: 65%;
 		margin-left: 54%;
 		padding: 0;
 	}
