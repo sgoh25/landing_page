@@ -76,11 +76,17 @@ a:hover {
 /*** interactive content ***/
 .hidden {
   display: none;
+  color: #4f6389; }
+
+.show {
+  display: block;
   color: #418aac; }
 
-.show:hover + .hidden {
-  display: block;
-  color: #4f6389; }
+button {
+  background-color: transparent;
+  border-style: hidden;
+  text-align: left;
+  padding: 0; }
 
 /******/
 hr {

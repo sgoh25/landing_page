@@ -97,12 +97,19 @@ a:hover {
 /*** interactive content ***/
 .hidden {
 	display: none;
+    color: rgb(79, 99, 137);
+}
+
+.show {
+	display: block;
 	color: rgb(65, 138, 172);
 }
 
-.show:hover+.hidden {
-	display: block;
-	color: rgb(79, 99, 137);
+button {
+    background-color: transparent;
+    border-style: hidden;
+    text-align: left;
+    padding: 0;
 }
 
 /******/

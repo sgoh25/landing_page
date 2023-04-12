@@ -45,116 +45,142 @@
       <div class="content">
         <h2>Welcome!</h2>
 <p>
-  I am a Senior Software Modeling Systems Design Engineer at <a href="www.westerndigital.com">Western Digital</a>,
-  working on software modeling and performance optimization for enterprise SSD products.
+    I am a Senior Software Modeling Systems Design Engineer at <a href="www.westerndigital.com">Western Digital</a>,
+    working on software modeling and performance optimization for enterprise SSD products.
 </p>
 <p>
-  I graduated from <a href="https://www.ucla.edu/">UCLA</a> in 2020 with a M.S. in Electrical and Computer Engineering,
-  with a focus on circuits and embedded systems.
+    I graduated from <a href="https://www.ucla.edu/">UCLA</a> in 2020 with a M.S. in Electrical and Computer Engineering
+    and in 2018 with a B.S. in Electrical Engineering.
 </p>
-<div class="show" style="color: rgb(65, 138, 172)">Fun Fact: I'm really good at finding bugs...</div>
-<div class="hidden">But I like debugging so it's okay :)</div>
+<button class="show" onclick="ShowAndHide('debug')">Fun Fact: I'm really good at finding bugs...</button>
+<div class="hidden" style="display:none;" id="debug">But I like debugging so it's okay :)</div>
 
 <div class="grid">
-  <div class="card">
-    <h2>Work Experience</h2>
-    <p>
-      <a href="www.westerndigital.com">Western Digital</a>
-    <ul>
-      <li class="show" style="color: rgb(65, 138, 172)">Senior Software Modeling Systems Design Engineer</li>
-      <ul class="hidden">
-        <li>Python</li>
-        <li>bash</li>
-        <li>git/Gerrit</li>
-        <li>BitBucket</li>
-        <li>Jenkins</li>
-        <li>Artifactory</li>
-        <li>Jupyter Notebook</li>
-        <li>pandas, seaborn, matplotlib, NumPy</li>
-        <li>SQLite</li>
-        <li>AWS EC2/S3</li>
-        <li>JIRA</li>
-      </ul>
-      <li>Systems Design Engineering Intern</li>
-    </ul>
-    <a href="https://www.cimb.com.sg/">CIMB Singapore</a>
-    <ul>
-      <li>Financial Analyst Intern (Research Division)</li>
-    </ul>
-    </p>
-  </div>
-  <div class="card">
-    <h2>Education</h2>
-    <p>
-      <a href="https://www.ucla.edu/">University of California, Los Angeles</a>
-    <ul>
-      <li class="show" style="color: rgb(65, 138, 172)">M.S. in Electrical & Computer Engineering</li>
-      <ul class="hidden">
-        <li>Python</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>git</li>
-        <li>Jupyter Notebook</li>
-        <li>MATLAB</li>
-      </ul>
-      <li>B.S. in Electrical Engineering</li>
-      <ul>
-        <li>Honors: <a href="https://www.seasoasa.ucla.edu/latin-honors-eligibility/">cum laude</a></li>
-      </ul>
-    </ul>
-    </p>
-  </div>
-  <div class="card">
-    <h2>Projects</h2>
-    <p>
-        <a href="https://github.com/sgoh25/osusume">Osusume: A Recommendation Website</a>
-    <ul>
-      <li class="show" style="color: rgb(65, 138, 172)">
-        A forum-based web application where users can poll the community for recommendations (aka "osusume")
-      </li>
-      <ul class="hidden">
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Flask</li>
-        <li>Python</li>
-        <li>SQL</li>
-      </ul>
-      <li>View the demo <a href="https://youtu.be/TWagI6jTSl4">here!</a></li>
-    </ul>
-      <a href="https://github.com/sgoh25/cookbook">My Cookbook</a>
-    <ul>
-      <li class="show" style="color: rgb(65, 138, 172)">
-        An interactive web-based cookbook of my favorite baking recipes
-      </li>
-      <ul class="hidden">
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Python</li>
-      </ul>
-      <li>View the demo <a href="https://cookbook-amber-five.vercel.app/">here!</a></li>
-    </ul>
-    </p>
-  </div>
-  <div class="card">
-    <h2>Skills</h2>
-    <p>
-      <i>Programming Languages</i>
-    <ul>
-      <li>Python, JavaScript, SQL, C++, Java, bash</li>
-    </ul>
-    <i>Technologies</i>
-    <ul>
-      <li>React, Flask, SQLite, Jupyter Notebook, pandas, seaborn, matplotlib, NumPy</li>
-    </ul>
-    <i>CI/CD Tools</i>
-    <ul>
-      <li>git, Firebase, Jenkins, Github, BitBucket, Gerrit, Artifactory</li>
-    </ul>
-    </p>
-  </div>
+    <div class="card">
+        <h2>Work Experience</h2>
+        <p>
+            <a href="www.westerndigital.com">Western Digital</a>
+        <ul>
+            <li>
+                <button class="show" onclick="ShowAndHide('wd')">
+                    Senior Software Modeling Systems DesignEngineer
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="wd">
+                <li>Python</li>
+                <li>bash</li>
+                <li>Jenkins</li>
+                <li>git</li>
+                <li>Gerrit/BitBucket</li>
+                <li>Artifactory</li>
+                <li>Jupyter Notebook</li>
+                <li>pandas, seaborn, matplotlib, NumPy</li>
+                <li>SQLite</li>
+                <li>AWS EC2/S3</li>
+                <li>JIRA</li>
+            </ul>
+            <li>Systems Design Engineering Intern</li>
+        </ul>
+        <a href="https://www.cimb.com.sg/">CIMB Singapore</a>
+        <ul>
+            <li>Financial Analyst Intern (Research Division)</li>
+        </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h2>Education</h2>
+        <p>
+            <a href="https://www.ucla.edu/">University of California, Los Angeles</a>
+        <ul>
+            <li>
+                <button class="show" onclick="ShowAndHide('ucla')">
+                    M.S. in Electrical & Computer Engineering
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="ucla">
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>git</li>
+                <li>Jupyter Notebook</li>
+                <li>MATLAB</li>
+            </ul>
+            <li>B.S. in Electrical Engineering</li>
+            <ul>
+                <li>Honors: <a href="https://www.seasoasa.ucla.edu/latin-honors-eligibility/">cum laude</a></li>
+            </ul>
+        </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h2>Projects</h2>
+        <p>
+            <a href="https://github.com/sgoh25/osusume">Osusume: A Recommendation Forum</a>
+        <ul>
+            <li>
+                <button class="show" onclick="ShowAndHide('osusume')">
+                    A full-stack forum-based web application
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="osusume">
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+            </ul>
+            <li>Discuss recommendations with the community (movies, restaurants, career
+                advice, etc.)</li>
+            <li>View the demo <a href="https://youtu.be/oR46j1pO99M">here!</a></li>
+        </ul>
+        <a href="https://github.com/sgoh25/cookbook">The Bready Bakery</a>
+        <ul>
+            <li>
+                <button class="show" onclick="ShowAndHide('cookbook')">
+                    An interactive crowdsourced cookbook
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="cookbook">
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Firebase Realtime NoSQL Database</li>
+                <li>Firebase Cloud Storage</li>
+            </ul>
+            <li>Share your favorite baking recipes online (images, ingredients, instructions)</li>
+            <li>View the demo <a href="https://youtu.be/a2P2-2X2O0Y">here!</a></li>
+        </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h2>Skills</h2>
+        <p>
+            <i>Programming Languages</i>
+        <ul>
+            <li>Python, JavaScript, SQL, C++, Java, bash</li>
+        </ul>
+        <i>Technologies</i>
+        <ul>
+            <li>React, Flask, SQLite, Jupyter Notebook, pandas, seaborn, matplotlib, NumPy</li>
+        </ul>
+        <i>Development Tools</i>
+        <ul>
+            <li>git, Firebase, Jenkins, AWS (S3/EC2), Github/BitBucket/Gerrit, Artifactory</li>
+        </ul>
+        </p>
+    </div>
 </div>
 
+<SCRIPT>
+    function ShowAndHide(id) {
+        var x = document.getElementById(id);
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</SCRIPT>
       </div>
       
     </main>

@@ -7,8 +7,8 @@
     I graduated from <a href="https://www.ucla.edu/">UCLA</a> in 2020 with a M.S. in Electrical and Computer Engineering
     and in 2018 with a B.S. in Electrical Engineering.
 </p>
-<div class="show" style="color: rgb(65, 138, 172)">Fun Fact: I'm really good at finding bugs...</div>
-<div class="hidden">But I like debugging so it's okay :)</div>
+<button class="show" onclick="ShowAndHide('debug')">Fun Fact: I'm really good at finding bugs...</button>
+<div class="hidden" style="display:none;" id="debug">But I like debugging so it's okay :)</div>
 
 <div class="grid">
     <div class="card">
@@ -16,8 +16,12 @@
         <p>
             <a href="www.westerndigital.com">Western Digital</a>
         <ul>
-            <li class="show" style="color: rgb(65, 138, 172)">Senior Software Modeling Systems Design Engineer</li>
-            <ul class="hidden">
+            <li>
+                <button class="show" onclick="ShowAndHide('wd')">
+                    Senior Software Modeling Systems DesignEngineer
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="wd">
                 <li>Python</li>
                 <li>bash</li>
                 <li>Jenkins</li>
@@ -43,8 +47,12 @@
         <p>
             <a href="https://www.ucla.edu/">University of California, Los Angeles</a>
         <ul>
-            <li class="show" style="color: rgb(65, 138, 172)">M.S. in Electrical & Computer Engineering</li>
-            <ul class="hidden">
+            <li>
+                <button class="show" onclick="ShowAndHide('ucla')">
+                    M.S. in Electrical & Computer Engineering
+                </button>
+            </li>
+            <ul class="hidden" style="display:none;" id="ucla">
                 <li>Python</li>
                 <li>C++</li>
                 <li>Java</li>
@@ -62,34 +70,39 @@
     <div class="card">
         <h2>Projects</h2>
         <p>
-            <a href="https://github.com/sgoh25/osusume">Osusume: A Recommendation Website</a>
+            <a href="https://github.com/sgoh25/osusume">Osusume: A Recommendation Forum</a>
         <ul>
-            <li class="show" style="color: rgb(65, 138, 172)">
-                Full-stack web application where users can poll the community and discuss recommendations for various
-                subjects, such as movies, restaurants, and career advice
+            <li>
+                <button class="show" onclick="ShowAndHide('osusume')">
+                    A full-stack forum-based web application
+                </button>
             </li>
-            <ul class="hidden">
+            <ul class="hidden" style="display:none;" id="osusume">
                 <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Python</li>
                 <li>Flask</li>
                 <li>SQLite</li>
             </ul>
+            <li>Discuss recommendations with the community (movies, restaurants, career
+                advice, etc.)</li>
             <li>View the demo <a href="https://youtu.be/oR46j1pO99M">here!</a></li>
         </ul>
-        <a href="https://github.com/sgoh25/cookbook">My Cookbook</a>
+        <a href="https://github.com/sgoh25/cookbook">The Bready Bakery</a>
         <ul>
-            <li class="show" style="color: rgb(65, 138, 172)">
-                An interactive crowdsourced cookbook where users can share their favorite recipes (images, ingredients,
-                instructions)
+            <li>
+                <button class="show" onclick="ShowAndHide('cookbook')">
+                    An interactive crowdsourced cookbook
+                </button>
             </li>
-            <ul class="hidden">
+            <ul class="hidden" style="display:none;" id="cookbook">
                 <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Next.js</li>
                 <li>Firebase Realtime NoSQL Database</li>
                 <li>Firebase Cloud Storage</li>
             </ul>
+            <li>Share your favorite baking recipes online (images, ingredients, instructions)</li>
             <li>View the demo <a href="https://youtu.be/a2P2-2X2O0Y">here!</a></li>
         </ul>
         </p>
@@ -112,3 +125,14 @@
         </p>
     </div>
 </div>
+
+<SCRIPT>
+    function ShowAndHide(id) {
+        var x = document.getElementById(id);
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</SCRIPT>
