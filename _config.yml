@@ -9,7 +9,7 @@ compass:
   # author will appear under the avatar (optional)
   author: "Seraphine Goh"
   # tagline will appear under the title (optional)
-  tagline: "<a href='../assets/SeraphineGoh_Resume.pdf'>Resume</a> - 
+  tagline: "<a>Resume</a> - 
   <a href='https://www.linkedin.com/in/seraphine-goh/'>Linkedin</a>"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
